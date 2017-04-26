@@ -10,30 +10,39 @@
   <body>
     <div class="container">
       <h1>Fill out the form below</h1>
-
-      <form id="appointment">
-        <div class="form-group">
-          <label for="name">Please enter your name:</label>
-          <input id="name" type="text" class="form-control">
-        </div>
-        <div class="form-group">
-          <label for="description">Please enter the description of your appointment:</label>
-          <input id="description" type="text" class="form-control">
-        </div>
-        <div class="form-group">
-          <label for="appt-date">Please choose the date of your appointment:</label>
-          <input id="appt-date" type="date" class="form-control">
-        </div>
-        <div class="form-group">
-          <label for="time1">Please enter your start time:</label>
-          <input id="time1" type="time" class="form-control">
-        </div>
-        <div class="form-group:">
-          <label for="time2">Please enter your end time:</label>
-          <input id="time2" type="time" class="form-control">
-        </div>
-      </form>
+      <div>
+        <form id="appointment">
+          <div class="form-group">
+            <label for="name">Please enter your name:</label>
+            <input id="name" type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="description">Please enter the description of your appointment:</label>
+            <input id="description" type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="apptdate">Please choose the date of your appointment:</label>
+            <input id="apptdate" type="date" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="time1">Please enter your start time:</label>
+            <input id="time1" type="time" class="form-control">
+          </div>
+          <div class="form-group:">
+            <label for="time2">Please enter your end time:</label>
+            <input id="time2" type="time" class="form-control">
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+      <div id="endForm">
+        <h2>Your form has been processed.</h2>
+        <h5><span class="name"></span></h5>
+        <h5><span class="description"></span></h5>
+        <h5><span class="apptdate"></span></h5>
+        <h5><span class="time1"></span></h5>
+        <h5><span class="time2"></span></h5>
+      </div>
     </div>
-
   </body>
 </html>
